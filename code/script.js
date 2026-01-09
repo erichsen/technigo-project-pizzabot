@@ -93,7 +93,7 @@ alert(`You selected: ${subtypeChoice}.`)
 
 // Step 4 - Age
 // Age input and validation
-let age = prompt('Please enter your age:')
+let age = prompt('Is this for a child or an adult? Please enter your age:')
 if (age < 18) {
   alert('Note: As you are under 18, please ensure you have parental consent for this order.')
 } else {
