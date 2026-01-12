@@ -102,4 +102,13 @@ if (age < 18) {
 
 // Step 5 - Order confirmation
 // Final confirmation message
-alert(`Thank you for your order, ${userInput}! You ordered a ${subtypeChoice} and are ${age} years old.`)
+
+let confirmOrder = prompt("You are about to order a ${subtypeChoice} for a total of ${price} kr. Do you want to proceed with the order? (\n1. Yes\n2. No)")
+if (confirmOrder === '1') {
+  alert(`Thank you, ${userInput}! You have ordered a ${subtypeChoice}. Your order will be ready shortly. Enjoy your meal!`)
+} else {
+  alert('Order cancelled. Thank you for visiting Eclerk Pizzeria!')
+}
+
+
+// alert(`Thank you, ${userInput}! You have ordered a ${subtypeChoice}. Your order will be ready shortly. Enjoy your meal!`)
